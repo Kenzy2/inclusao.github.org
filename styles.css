@@ -1,0 +1,302 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(135deg, #f9f9f9, #8ad2db);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(90deg, #017ec2, #62d5ec);
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideInFromTop 1s ease-out;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  text-shadow: 2px 2px 5px rgba(87, 86, 86, 0.3);
+}
+
+/* Menu de navegação */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f1f1f1;
+  background-color: #005f7f;
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+
+/* Efeito de foco */
+nav ul li a:focus,
+nav ul li a:target {
+  color: #f1f1f1;
+  font-weight: bold;
+  background-color: #004466;
+  border-radius: 5px;
+}
+
+/* Seções */
+main section {
+  padding: 2em;
+  margin: 2em auto;
+  background: white;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1.5s ease;
+}
+
+main section h2 {
+  color: #0077b6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #0077b6;
+  padding-bottom: 5px;
+}
+
+/* Links úteis */
+main section ul li a {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+main section ul li a:hover {
+  color: #005f7f;
+  text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background: #333;
+  color: white;
+  margin-top: 2em;
+  transition: background-color 0.3s;
+}
+
+footer:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+
+/* Marcações */
+mark {
+  background-color: rgba(26, 87, 167, 0.233);
+  color: #000;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.historia {
+  background-color: #f9f9f9; 
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.historia:hover {
+  transform: translateY(-5px);
+}
+
+.historia h3 {
+  font-size: 1.5em;
+  color: #0077b6;
+}
+
+.historia p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+/* Estilos para a seção de depoimentos */
+#historias {
+  margin-top: 2em;
+  padding: 2em;
+  background: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1.5s ease;
+}
+
+#historias h2 {
+  color: #0077b6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #0077b6;
+  padding-bottom: 5px;
+  font-size: 1.8em;
+}
+
+#historias p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+.historias-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.historia {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  color: #333;
+}
+
+.historia:hover {
+  transform: translateY(-5px);
+}
+
+.historia h3 {
+  font-size: 1.5em;
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+.historia p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Ajuste do botão de navegação */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f1f1f1;
+  background-color: #005f7f;
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+/* Estilos da página de adicionar depoimento */
+#adicionar-depoimento {
+  padding: 2em;
+  background-color: #f9f9f9;
+  margin: 2em auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1.5s ease;
+}
+
+#adicionar-depoimento h2 {
+  color: #0077b6;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+#adicionar-depoimento p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f7f;
+}
+
+button:focus {
+  outline: none;
+  background-color: #004466;
+}

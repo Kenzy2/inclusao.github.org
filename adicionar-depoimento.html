@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionar Depoimento</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Adicionar Depoimento</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Voltar para Home</a></li>
+        <li><a href="depoimentos.html">Ver Depoimentos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="adicionar-depoimento">
+      <h2>Compartilhe Sua História</h2>
+      <p>Conte sua experiência de inclusão e inspire outras pessoas!</p>
+
+      <form action="/adicionar-depoimento" method="POST" id="form-depoimento">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="idade">Idade:</label>
+          <input type="number" id="idade" name="idade" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="depoimento">Depoimento:</label>
+          <textarea id="depoimento" name="depoimento" rows="6" required></textarea>
+        </div>
+        
+        <button type="submit">Enviar Depoimento</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Projeto Escolar de Inclusão</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
